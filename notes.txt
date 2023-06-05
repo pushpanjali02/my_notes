@@ -1,0 +1,504 @@
+19/5/2023
+
+Optimization techniques:
+
+1.Greedy approach:
+To select the best option we use greedy approach i.e., to maximize profits, minimize costs under given conditions.
+
+2.Divide and conquer approach:
+A big problem is going to divided into no.of smaller problems so that they can be easily solved.And solution of all the sub problems are combined to splve the actual larger problem.
+For example: Largest number in a list of 8 elements.
+Here list is divide into a half i.e 2 lists of 4 elements each. Again these 2 lists are divide into halfs i.e., 2 elemented lists are created. Finally there will be 4 lists of size 2. Here can compare the elements of the lists and an findout the larger of the 2 elements. Again larger of 1st numbers is found.Similarly the next 2 numbers are compared. And finally largest is computed. 
+
+
+EXCEPTION PROPAGATION AND CALL STACK:
+When a method is called it is going to be on the stack and when the method returns then method id removed from the stack.
+Try block-----acutual code (ex: division)
+Catch block----to handle the exception (ex: ArithmeticException e    and return 0)
+Finally block----to close the onnection
+"throw" clause is used to propate the exception.When exception is not handled at any method then the exception reaches the main() method and then main() throws this to jvm, jvm terminates the program and displays the exception statement on the console.
+
+DEFENSIVE CODING AND EXCEPTION HANDLING:
+Look before you leap-----defensive coding
+Easier to ask forgiveness than permission-----exception handling
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+20/5/2023
+USER DEFINED EXCCEPTIONS AND THROW CLAUSE:
+AUTOMATED SOFTWARE TESTING:
+Software testing is done to 
+-check the errors/buggs in the software
+-find efficiency of the software
+Types of testing:
+1.Black box testing:
+Here some inputs and outs are given and functionality is checked. EX:Money withdrawl from the atm machine without knowing how the opeartion is done internally.
+-Programming knowledge is not required
+-Independent software testers take care of it
+2.White box testing:
+Here functionality of the software is tested, internal structure or design is tested by the tester.
+-Programming knowledge is required
+-Software developers take care of it
+Functional Testing(What system does) and Non functional Testing(how system does):
+
+UNIT TESTING MASTER CLASS:
+JUnit5:
+----JUnit is the most popular Java unit testing framework. An open-source framework, it's used to write and run repeatable automated tests.
+To creat tests for your project:
+1.right click 
+2.select generate
+3.click on test
+4.select junit5
+5.Click on file name & right click, select open module settings
+6.Click on projects
+7.click on "+" symbol then java
+8.then add the jar files one by one.
+On the test file write the code
+THERE WILL BE 3 PARTS IN THE TEST FILE:
+1.ARRANGE--------object of the class is created here
+2.ACT---------- parameters like strings are passed to the method or function(METHOD IS CALLED HERE).
+3.ASSERT------actual output is compated with the produced output
+Downloading testing frameworks:
+Testing the software
+1.Go to junit jupiter api 
+2.Click on the first link
+3.Download the latest version jar file(I have downloaded the jar 5.5.2 version for junit5)
+4.Next download dependencies like junit platform commons (Downloaded the jar 1.5.2 version) 
+5.Next download the another dependency i.e., hamcrest all(Downloaded the jar 1.3 version)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+22/5/2023
+WRITING PARAMETERIZED TESTS:
+1.Download the dependency junit jupiter params jar file(Downloaded apr10, 2020 version)
+RUNNING TEST SUITES
+---Test suite is used to bundle a few unit test cases and run them together. In JUnit, both @RunWith and @Suite annotations are used to run the suite tests
+---TO identify the gaps between the tests
+---In a series of tests first test has to be completed to begin the next tests
+1.Download the dependency---junit platform suite api jar file 1.6.2
+2.Download the dependency----junit jupiter engine 5.6.2
+3.Download the dependency----junit platform suite api 1.6.2
+
+@Tag annotation is used to filter the test cases from the test plants
+
+@Test indicates it is a test method
+
+@DisplayName it is custom method to display a msg
+MOCKITO TESTING
+Creates a mock object nothing but the clone of the object that is under test.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+23/5/2023
+TDD MASTER CLASS-1:
+----Test Driven Development (TDD) is a software development practice that focuses on creating unit test cases before developing the actual code.
+----TDD is a software development process which includes test-first development. It means that the developer first writes a fully automated test case before writing the production code to fulfil that test and refactoring.
+Steps in TDD:
+1.Add tests
+2.See tests fail
+3.Write code 
+4.Run tets
+5.Refactor
+Cycle repeats
+
+
+
+GENERICS TYPE:
+---Generics in OOP allow us to define a specification of a class or method that can be used with any data type.
+----Java Generics is a set of related methods or a set of similar types. Generics allow types Integer, String, or even user-defined types to be passed as a parameter to classes, methods, or interfaces. Generics are mostly used by classes like HashSet or HashMap.
+--WE donot need to type cast the results
+GENERIC CLASSES CAN STORE AN OBJECT OF TYPE.
+GENERIC METHODS:
+Generic methods any type of arguments like int,string,float etc and return any type.
+SYNTAX:
+public static<E>void printarray(E[] inputarray)-------HERE E INDICATE TYPE PARAMETER
+
+GENERIC INHERITANCE AND SUBTYPE:
+when subclass extends a super class the operations performed in the super class will be added to the opeartions present in the subclass.So, as a results both the opeartions will be displayed on the console. 
+
+GENERIC COLLECTIONS:
+
+The generic collections are introduced in Java 5 Version. The generic collections disable the type-casting and there is no use of type-casting when it is used in generics. The generic collections are type-safe and checked at compile-time. Generic collections allow datatypes to pass as parameters to the classes.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+24/5/2023
+
+EXPLORING JAVA 8'S LATEST FEATURES:
+LAMBDA EXPRESSIONS:
+----A lambda expression is a short block of code which takes in parameters and returns a value. Lambda expressions are similar to methods, but they do not need a name and they can be implemented right in the body of a method 
+----The Lambda expression is used to provide the implementation of an interface which has functional interface. It saves a lot of code. In case of lambda expression, we don't need to define the method again for providing the implementation.
+
+JAVA INTERFACES:
+There should not be any access specifiers for the method signatures(method names within the java interfaces) in the java interface beacuse by default they are considered as public and abstarct by java and an interface must be of public access specifier.
+
+TO WRITE THE METHODS WE CAN WE USE INTELLIJ SHORTCUTS:
+1.Press alt+insert
+2.Select implement methods
+3.Select methods to implement
+4.You can find the methods craeted there.
+------>Default (or) defender methods---methods in the interface with implementaion and these defender methods do not make any any changes in the classes which are implementing the interface.
+------>Static methods inside the inteface can be called only with the interface name followed by the method name.
+------>Similarly the variables declared and initialized inside the interface also needs int interface name followed by the method name.
+
+
+STREAMS:
+
+OPTIONAL CLASS IN JAVA:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+25/5/2023
+
+READ AND WRITE TO A FILE:
+Inorder to read from a file or write into a file we need import the java.io.* package.
+TO WRITE INTO THE FILE:
+1.Need to create a BufferedWriter object using the command
+2.BufferedWriter br=new BufferedWriter(new FileWriter("copy the path where we want to write and a new file name "))
+3.Keep them in a try block
+4.To add a text use bw.write("pushpanjali") inside the try block.
+5.Use bw.close() to close
+6.Use a catch block to indicate an exception if there is any
+
+SIMILARLY WE CAN READ FROM A FILE AND ALSO CAN COPY CONTENTS OF A FILE INTO ANOTHER.
+
+FILES AND STREAMS:
+Java uses streams to read from the files or to write into the files permanently.
+In the command System.in----->System indicates the class and in is the STREAM.There are other streams also like out, err variables. out and err referes to the default output device i.e., console.
+Java applications use input streams to read data from the source devices like socket, array and files similarly uses output streams to to write data to destination like files, arrays, socket etc.
+Mainly there are 2 types of streams 
+1.Byte streams--to read or write byte data
+2.Character streams---to read or write character data
+
+INPUT STREAM AND OUTPUT STREAM CLASSES:
+BUFFERED INPUT STREAM AND BUFFERED OUTPUT STREAM:
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+26/5/2023
+
+STRUCTURED QUERY LANGUAGE:
+--Database--->A database is an organized collection of structured information, or data, typically stored electronically in a computer system. A database is usually controlled by a database management system (DBMS)
+---RDBMS-->A relational database management system (RDBMS) is a program used to create, update, and manage relational databases.
+--SQL is used for programming and designed to manage the data held in relational database management systems(RDBMS) and to perform operations on the RDBMS.
+--MySQL is a open source RDBMS which runs on a server and it is developed, distributed and supported by oracle corporation.
+SQL commands:
+1.Data Definition Language(DDL): CREATE, ALTER, DROP, 
+2.Data Manipilation Language(DML): INSERT, UPDATE, DELETE
+3.Transaction Control Language(TCL): COMMIT, ROLLBACK,SAVE POINT
+4.Data Control Language(DCL): GRANT, REVOKE
+5.Data Query Language(DQL): SELECT
+
+desc--->the describe command is used to display a table that is created. ex: desc table_name
+TO fetch data form a table use the command--> Select * from table_name;
+
+SQL constraints: -----rules or protocols that the table's columns must follow to maintain accuracy, and integrity of the table's data 
+ 1.Primary key:
+
+	A primary key is a column or group of columns that uniquely identifies each row.And it should not a null. 
+ 2.Unique:
+	Unique constraint ensures that all columns should have unique value in them.
+ 3.Not Null:
+	Not Null constraint is used to ensure that the columns of the table should not hold any null value.
+ 4.Foreign key:
+	In SQL, a Foreign Key is a column (or combination of columns) in a table whose values match the values of a Primary Key column in another table. Using the   	Foreign key, we can link two tables together.
+ 5.Check:
+	To check a criteria we can use it. This command will not work in mysql but works in sqlserver.
+ 6.Default
+	To ssign a data defaultly we can use it
+--DROP: when we drop a database or table it will not exist anymore.
+syntax: DROP table <table name>;
+
+DATABASE DESIGN:
+
+TYPES OF DATA MODELS:
+1.OBJECT BASED DATA MODEL---	entity relationship model ER model
+2.RECORD BASED DATA MODEL--network model,hierarchical model, the relational models
+
+DATABASE NORMALIZATION: to minimize data redundancy in the database i.e., to reduce the insertion, deletion and updation anomalies(Or) problems.
+Here entire table is divided into no.of tables which are interrelated to reduce the redundancy.
+TYPES OF NORMALIZATION:
+1.First normal form
+2.Second normal form
+3.Third normal form
+
+JDBC API AND CRUD OPERATIONS:
+open database connectivity(ODBC)
+Fundamental steps in jdbc:
+1.Open a connection to database
+2.Create a statement object to perform a query
+3.Execute sql query
+4.Process result set
+
+DATABASE CONNECTIVITY STEPS:
+1.Register driver
+2.Get connection
+3.Create statement
+4.Execute query
+5.Close connection
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+27/5/2023
+
+BASICS OF HTML(HYPER TEXT MARKUP LANGUAGE):
+--To describe the template which is used to structure a web page we need html.
+--HTML is used to design the web pages
+--A markup language is one that is designed for defining and presenting text. HTML (HyperText Markup Language), is an example of a markup language. Within a text file such as an HTML file, elements are marked up using tags which explain the purpose of that part of the content.
+--Markup language is programming language that is used for processing, definition, presentation of text. 
+BASIC SYNTAX OF HTML:
+<start tag> content <stop tag>
+ex:<p> content </p>
+where p indicates paragraph, <p> start of paragraph and </p> indicates ending of paragraph.
+
+HTML DOCUMENT STRUCTURE:
+<!DOCTYPE html>//it indicates which type documents have to be expected by the web browser
+<html>
+	<head>
+		<!-- contains titles , scripts, description, styles and meta tags  etc -->
+	</head>
+	<body>
+		<!-- content visible on web page -->
+	</body>
+</html>
+
+---Content inside the body tags include paragraphs, images, links, videos, audio players, maps, froms etc.
+---The <head> element is a container for metadata (data about data) and is placed between the <html> tag and the <body> tag. 
+---Metadata is data about the HTML document. Metadata is not displayed. Metadata typically define the document title, character set, styles, scripts, and other meta information.
+--Everything inside body tags is displayed on the browser window.
+
+--TAGS IN HTML:
+1.<h1> to <h6>:
+To display the titles and sub titles on the web pages we need heading tags. The tags start from <h1> to <h6>.<h1> most important heading on the web page and <h6> indicates the least important tiles or sub titles.
+
+2.<p>:
+For writing paragraphs.
+
+3.<a>:
+To link a part of the code with anothe element  of the code with the another element.
+	<a href="https://stackbooks-ust.stackroute.in">https://stackbooks-ust.stackroute.in</a>
+
+4.<div>:
+--<div> is used to dividide the html document as sections.
+---<div> tags act as container for html elements.
+--DIV tag lets you identify the section defined by the DIV tag, so you can then apply formatting or scripting to its content
+
+5.<img>:
+To embedd an image inside the webpage
+	<img src="https link address" height="1000" width="1000" >
+
+6.<ul> unordered list, here list items are marked with bullets
+7.<ol> ordered list, here list items are marked with numbers
+8.<li> list element
+9.<table> create table, i.e., to display data in tabular form 
+10.<tr> to create row in a table.
+11.<th> to create heading to the tables
+12.<td> to enter data into the table
+13.<audio> is used to embed sound content in a document, such as music or other audio streams.
+14.<video> used to embed video content in a document, such as a movie clip or other video streams
+
+NOW TO CREATE FORM IN THE WEB PAGE:
+We will use the form tags, input tags to fetch the details entered by the user and labels for input heading
+The <br> tag inserts a single line break. The <br> tag is useful for writing addresses or poems.
+
+HTML ATTRIBUTES:
+1.class
+2.src
+3.id
+4.name
+5.alt
+6.href---url of the page
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+29/5/2023
+
+HTML5 NEW FEATURES:
+
+HTML ELEMENTS: paragraphs, headings, bulleted lists, form etc come under the html elements.
+HTML TAGS: paired and unpaired
+HTML ATTRIBUTES:additional data inside the tags can be added.
+
+html5 new features:
+1.Semantic elements      EX:header, nav, article, section, aside, footer.
+2.New elements           EX:added canvas,aduio, video 
+3.Removing old elements  EX: frame, frame set, font, center, applet
+4.Simplifying elements   EX: link without type, script without type
+5.New API support        EX: Geolocation api, drag and drop, application cache, local storage.
+
+HTML5 SEMANTICS ELEMENTS:
+1.Header: includes brand logos, site headings under this element
+2.Nav(Navigation): links in html document to redirect to a specified page within the website as per the navigation links which often uses the anchor tag(<a href="link">link</a>)to represent the links for redirecting.
+3.Article
+4.Section:  to distribute content in sections
+5.Aside
+6.Footer: copyright information, social media sites, 
+7.Figure
+8.Figcaption
+9.summary
+10.main
+11.details
+12.time
+13.mark
+14.address
+15.video
+
+ADDING IMAGES WITH HTML:
+
+HOW WEB 2.0 WORKS
+
+----In web 1.0 the contents of the web pages are static which means there were no possibilty to change the content after publishing it. Ex: online news pages, website containing the personal info of person which is never going to change. web 1.0 lasted between 1990 to 2004.
+---Web 2.0 is more interactive which allows users to post their content on fb, insta, twitter etc and allows them to interact with one anothe.
+EX:Online purchases, youtube( where users can subscribe to the youtuber's page and comment to their uploaded videos etc) are also examples of web 2.0.
+
+---Web 2.0 allows to create more collabrative, interactive, social and responsive web pages.
+ADVANTAGES OF WEB 2.0
+1.updatable content--insta, fb
+2.team collabration---zoom, slack, linkedin connections
+3.feedback collection------reviews on a product purchased, comments on a youtube video, zomato ratings etc.
+4.online payment service--google pay, 
+5.geo navigation--google map
+
+---WEB 3.0 provides the data according to the user's interests.makes use of semantics, ai, 3d graphics, ubiquitos.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+30/5/2023:
+
+CSS BOX MODEL:
+---CSS box models indicate how the html elements are modeled in browser engines and how the html elements are dimesioned from the css properties.
+---The HTML element is everything from the start tag to the end tag. EX:<p>paragraph</p>   it is html element.
+---In CSS, the term "box model" is used when talking about design and layout.
+---The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.
+
+CSS BOX MODEL includes:
+(margin(border(padding(content))))
+
+HTML FORM AND INPUTS:
+
+html form elements are useed when we want to collect information from the web page visitors like email id, name, mobile number, gender details, age etc.
+HTML form elements:
+1.input
+2.button
+3.label---to give a caption to the input field
+4.output
+5.datalist
+6.legend
+7.fieldset---to group similar elements
+7.textare
+8.<select><option>
+9.optgroup
+
+FORM ATTRIBUTES
+
+[]CSS BUILDING BLOCKS:
+###To style the web page we need css cascading style sheet.
+-->CSS KEY CONCEPTS:
+CSS STYLE RULES:
+
+CSS rules contain 3 parts:
+1.selector EX:body,paragraph,navigation,anchor tags etc.
+2.Definition ---->everything inside the curly braces.
+3.property and property value. EX:color:navy respectively.
+--To use any css code inside any html file we need link the css file with html file and it is possible with the help of link element.
+--As we now styles can be added as embedded i.e., inside the head tags style tag will be there, inline i.e., inside the paragraph tag or anyother tag there will be the style attribute or external i.e., a separate css file also known as style sheets with the required changes made with, when all of them or some them are present,the nthe closest stytle will be applied to the html elements.
+
+CSS style rule selection:
+1.ID selector:
+When we want to make changes to only few elemets and some other changes to other elements then we can use ID SELECTOR.A nd the id's should be unique.
+Use #symbol with the id to add  styles to a specific id.
+2.Class selector:
+For example we want our header and footer should be of same styles like background color, font-family etc then we will use the "class" inside the header and footer.
+Inside the stylesheet we have to write the .class name to define the styles.
+
+MORE CSS FEATURES:
+TEXT STYLING:
+1.Font styles
+2.Text layout styles
+
+CSS VALUES AND UNITS
+CSS SELECTORS
+PSEUDO CLASSES AND ELEMENTS AND CSS SPECIFICITY
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+31/5/2023
+
+ADDING FONTS IN CSS:
+FONT FAMILY:it is property 
+1.Specific font family--ex:times new roman, areal,verdana
+2.Generic font family--suported by all the browsers,  serif,fantasy,monospace,cursive,sans-serif
+WHEN WE DO NOT WANT TO USE THE FONTS IN HTML WE CAN USE THE GOOGLE FONTS ALSO.
+
+WEB FONTS:
+Web fonts are not free to use we need to pay for it or we should have some license to use them.
+
+INTRODUCTION TO CSS FLEX BOX:
+What is use of flexbox in CSS?
+Flexbox is a one-dimensional layout system that we can use to create a row or a column axis layout. It makes our life easier to design and build responsive web pages without having to use tricky hacks and a lot of float and position properties in our CSS code.
+The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning. Browser Support.
+
+We have css flex box properties like
+1.display:flex---------------to enable the flex.
+2.flex-direction:
+3.flex-wrap: 
+4.justity-content 
+5.align-elements:
+6.align-content:
+7.overflow: properties also.
+
+GRID LAYOUTS IN CSS:
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+														
+1/6/2023
+                                                                               BOOTSTAP
+BOOTSTRAP is the most popular CSS Framework for developing responsive and mobile-first websites.
+RWD--Responsive Web Design
+TOUR OF BOOTSTRAP APP:
+DESIGNING OF FSD (FULL STACK DEVELOPER) APPLICATION-1:
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3/6/2023
+										JAVA SCRIPT
+
+--->To create dynamic, interactive and user friendly web sites one should learn java script.
+--->Client-side scripting: The code along with the html web page is sent to the client by the server.The refers to the script and here it is java script.
+--->Java script is universally supported.
+--->JavaScript is the Programming Language for the Web. JavaScript can update and change both HTML and CSS. JavaScript can calculate, manipulate and validate data.
+To create in browser games, and change the color of buttons and allowing for zoom in and out features displaying the name of the button when the cursor hovers over it.
+Every browser has a java script engine ex. firebox it is spider monkey and for chrome the javascript engine is v8.
+
+JAVA SCRIPT HTML DOM(DOCUMENT OBJECT MODEL):
+When a web page is loaded browser creates a Document Object Model of the page.
+HTML DOM is standard for how to get,change, add or delete html elements.
+With help of html dom java script can access and change all the elements of an html document. 
+
+JAVA script is "dynamic type language" because we don't need to specify the data type of the variables.
+Primitive data types:
+--------- ---- -----
+Data types predefined by the javascript are called promitive data types number, string, boolean, undefined, null, symbol, BigInt.
+Numbers can be used to display numbers between (-253-1) and 253-1 . to represent larger numbers than this we nedd BigInt. Numbers can be used to represent the float values, exponential values also.
+Non-primitive data type:
+Object--- having key-value property.
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3/6/2023
+										JAVA SCRIPT
+
+--->To create dynamic, interactive and user friendly web sites one should learn java script.
+--->Client-side scripting: The code along with the html web page is sent to the client by the server.The refers to the script and here it is java script.
+--->Java script is universally supported.
+--->JavaScript is the Programming Language for the Web. JavaScript can update and change both HTML and CSS. JavaScript can calculate, manipulate and validate data.
+To create in browser games, and change the color of buttons and allowing for zoom in and out features displaying the name of the button when the cursor hovers over it.
+Every browser has a java script engine ex. firebox it is spider monkey and for chrome the javascript engine is v8.
+
+JAVA SCRIPT HTML DOM(DOCUMENT OBJECT MODEL):
+When a web page is loaded browser creates a Document Object Model of the page.
+HTML DOM is standard for how to get,change, add or delete html elements.
+With help of html dom java script can access and change all the elements of an html document. 
+
+JAVA script is "dynamic type language" because we don't need to specify the data type of the variables.
+Primitive data types:
+--------- ---- -----
+Data types predefined by the javascript are called promitive data types number, string, boolean, undefined, null, symbol, BigInt.
+Numbers can be used to display numbers between (-253-1) and 253-1 . to represent larger numbers than this we nedd BigInt. Numbers can be used to represent the float values, exponential values also.
+Non-primitive data type:
+Object--- having key-value property.
