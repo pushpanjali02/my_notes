@@ -502,3 +502,47 @@ Data types predefined by the javascript are called promitive data types number, 
 Numbers can be used to display numbers between (-253-1) and 253-1 . to represent larger numbers than this we nedd BigInt. Numbers can be used to represent the float values, exponential values also.
 Non-primitive data type:
 Object--- having key-value property.
+
+JAVA SCRIPT VALUES VS REFERENCE TYPES:
+
+It is like call by value and call by reference.
+In case of normal primitive data types the value of variables are stored on the stack memory, incase of non-primitive like arrays the address of the array variables are stored on the stack and value on the heap memories.
+Arrays, functions are examples of refrence types.
+--->We create the functions in javascript using the keyword "function".
+
+JAVASCRIPT SCOPES:
+Scopes in javascript define the accessibility of the variables, functions and the objects.
+
+TYPES OF SCOPES IN JS:
+1.Local scope    1.Function scope (Accessible inside the function only) 2.Block scope (Accessible inside the block only I.E., inside curly braces{}) 
+2.Global scope   Variables defined outside the functions or at the top of the program. EX: var x=10, let p=100, const z=90, A=50
+
+Block scope:
+Variables declared with const an let keywords have the block scope.
+Local variables are created when a function is called i.e., started end gets deleted when a function is completed.
+
+VAR , LET, CONST IN JAVASCRIPT:
+
+let and const have block scope and can not be redeclared in the same block.
+var keyword has global scope and local scope also.
+Inside a function var has local scope i.e., the function scope. 
+Using var we can have "hosting".
+
+Hoisting of var, const, let:
+
+One of the benefits of hoisting is that it enables us to call functions before they appear in the code. JavaScript only hoists declarations, not initializations.
+var---undefined
+
+let and const variables are not initialized here. They are hoisted at the top and declared and not initialized.
+
+Variables declared as const can not be reassigned values.
+ 
+JAVA SCRIPT TEMPLATE LITERALS:
+It provides more readability.
+Template literals are written in backticks.(` `)
+Template literals allow to display a string in multiple lines without using the new line character \n.
+They support string interpolation. EX:   console.log(`hi ${str}`);
+
+Tag templates are advanced form of template literals.
+To pass arguments to the function we can use the tag templates. EX: const rer=functionname `value to be passed`.
+
