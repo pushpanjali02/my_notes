@@ -546,3 +546,95 @@ They support string interpolation. EX:   console.log(`hi ${str}`);
 Tag templates are advanced form of template literals.
 To pass arguments to the function we can use the tag templates. EX: const rer=functionname `value to be passed`.
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+5/6/2023
+
+JAVA SCRIPT LOOPS:
+1.for loop
+2.for-in loop
+3.for-of loop
+4.while                entry controlled loop
+5.do-while	       exit controlled loop
+
+What is the difference between for of and for in loops?
+The for...of loop is used to iterate through the values of an iterable. The for...in loop is used to iterate through the keys of an object. The for...of loop cannot be used to iterate over an object.
+
+Both for...in and for...of statements iterate over something. The main difference between them is in what they iterate over. The for...in statement iterates over the enumerable string properties of an object, while the for...of statement iterates over values that the iterable object defines to be iterated over
+
+3.for-in loop should be used to iterate over non-array objects.
+
+JAVA SCRIPT IF-ELSE CONDITION:
+Conditional statement in JS:
+1.IF
+2.IF-ELSE
+3.NESTED IF    NO.OF  IF STATEMENTS IN THE PROGRAM.
+4.IF-ELSE LADDER
+5.SWITCH CASE
+
+ARRAYS AND STRINGS IN JS:
+
+Types of arrays:
+1.Associative arrays : key value pairs can be seen here, keys are allotted with arrays here.[] 
+2.Index arrays  :values are accessed using the index values.
+
+1.associative arrays:
+var character=[];
+character["vowels"]="aeiou";
+character["consonants"]="remaining all characters";
+
+2.index arrays:
+var fruites=["apples","kiwi","banana"];
+console.lof(fruites[1]);
+
+Declaration of arrays in js:
+1.using new keyword.  ex:new Array(1,2,56,8)
+2.using i.e., assigning the literals inside [] brackets.
+3.using Array.of() method
+
+ARRAY METHODS:
+1.push --- to add an element at the position
+2.pop --- to delete an element at the last position
+3.lenght----to find length
+4.forEach
+5.every
+6.sort
+7.reverse
+8.concat
+9.map       ----to transform array elements we use map method i.e., to use any required method
+10.unshift ---- to add an element at the begining
+11.filter method
+
+ARRAY ATTRIBUTES:
+1.length---appends new element at the end
+2.indexOf-----return index of the specified element
+3.typeOf-----returns type of the array
+
+JAVA SCRIPT STRINGS:
+Creating strings :
+1.string literals     var s1="yeppp"
+2.using string objects   var s2=new String("yeppp")
+
+Strings features:
+1.immutable
+2.case sensitive
+
+Accessing string characters:
+
+1.charAt(index)       s1.charAt(1)
+2.using index         s1[1]
+
+String methods:
+
+1.concat
+2.charAt(index)
+3.split        --------converts a string into array of strings
+4.replace      -------to replace a string another string
+5.toLowerCase()
+6.tpUpperCase()
+7.slice(start,end) ----returns a part of string
+8.substring(start,end)---return a part of string
+9.substr(start,length)
+10.trim() ------removes white spaces from the string
+11.includes()-----searches for a string and returns boolean value
+12.search()  -----seartches for a string and returns position of match
