@@ -601,7 +601,8 @@ ARRAY METHODS:
 6.sort
 7.reverse
 8.concat
-9.map       ----to transform array elements we use map method i.e., to use any required method
+9.map       ----to transform array elements we use map method i.e., to use any required method, The Array.map() method creates a new array from the results of calling                          
+		a function for every element.
 10.unshift ---- to add an element at the begining
 11.filter method
 
