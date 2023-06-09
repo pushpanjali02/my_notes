@@ -475,34 +475,6 @@ Numbers can be used to display numbers between (-253-1) and 253-1 . to represent
 Non-primitive data type:
 Object--- having key-value property.
 
-
-
-
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-3/6/2023
-										JAVA SCRIPT
-
---->To create dynamic, interactive and user friendly web sites one should learn java script.
---->Client-side scripting: The code along with the html web page is sent to the client by the server.The refers to the script and here it is java script.
---->Java script is universally supported.
---->JavaScript is the Programming Language for the Web. JavaScript can update and change both HTML and CSS. JavaScript can calculate, manipulate and validate data.
-To create in browser games, and change the color of buttons and allowing for zoom in and out features displaying the name of the button when the cursor hovers over it.
-Every browser has a java script engine ex. firebox it is spider monkey and for chrome the javascript engine is v8.
-
-JAVA SCRIPT HTML DOM(DOCUMENT OBJECT MODEL):
-When a web page is loaded browser creates a Document Object Model of the page.
-HTML DOM is standard for how to get,change, add or delete html elements.
-With help of html dom java script can access and change all the elements of an html document. 
-
-JAVA script is "dynamic type language" because we don't need to specify the data type of the variables.
-Primitive data types:
---------- ---- -----
-Data types predefined by the javascript are called promitive data types number, string, boolean, undefined, null, symbol, BigInt.
-Numbers can be used to display numbers between (-253-1) and 253-1 . to represent larger numbers than this we nedd BigInt. Numbers can be used to represent the float values, exponential values also.
-Non-primitive data type:
-Object--- having key-value property.
-
 JAVA SCRIPT VALUES VS REFERENCE TYPES:
 
 It is like call by value and call by reference.
@@ -622,8 +594,8 @@ Strings features:
 
 Accessing string characters:
 
-1.charAt(index)       s1.charAt(1)
-2.using index         s1[1]
+1.charAt(index) -------> s1.charAt(1)
+2.using index   ------->  s1[1]
 
 String methods:
 
@@ -639,3 +611,119 @@ String methods:
 10.trim() ------removes white spaces from the string
 11.includes()-----searches for a string and returns boolean value
 12.search()  -----seartches for a string and returns position of match
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+6/6/2023
+
+JAVA SCRIPT FUNCTIONS:
+
+1.Anonymous functions: Where a function definition is assigned to a variable. and to call a function we do not need to use the function's name instead we can use the variable to which the function body is assigned. EX: greet();
+Anonymous functions do not have names.
+
+Function Hoisting:
+
+Function hoisting is possible with function declarations only and not with the function expressions i.e., when a function definition is assigned to a variable and that variable is used to invoke the function.
+
+Self-invoking functions:
+When we keep the entire function definition inside the() and then place (); after using the paranthesis then it becomes self invoking functions.
+
+They are invoked even without calling.
+
+Functions as VALUES:
+Assigning function call to a variable and we do not need to call the function separately.
+
+Functions as OBJECTS:
+
+js functions have both properties and methods.
+The no.of parameters passed to a function can be known with the help of "arguments.length" property.
+
+Using .toString() method we can convert any type of data into string.
+
+ARRAY FUNCTIONS:
+
+Here we do not need the function keyword and curly braces and return statement if the function is of single line only but it is always good to keep them in the programs. EX: const z= (x,y)=> x*y;
+
+Array functions can not be hoisted.
+
+Generator FUNCTIONS:
+These functions return multiple values when demanded. * is used after the function keyword in the function definition.
+
+Predefined Functions In Javascript:
+
+1.eval() evaluates a string and return a value
+2.parseInt() Parses a string argument and return an integer value.
+3.parseFolt() Parese a string argument and returns a floating-point value.
+4.escape() return hexadecimal encoding of an argument.
+5.unescape() returns ASCII string for the specified value.
+
+JAVSCRIPT CLIENT SIDE:
+
+Client side APIs(Application Programming Interface):
+--->APIs enable connection between the computers or computer programs.
+--->APIs are software interfaces that offers services to other softwares to enhance the required functionalities.
+--->They abstract more complex code away from you, providing some easier syntax to use in it's place.
+--->EX: When ever we ckeck the weather or travel ticket on smart phone an api is called at the backend.
+
+WEB APIS:
+--->Can be accessed over the web using http protocol.
+--->Enhanced form of web aoolication
+--->Extends the functionality of the browser.
+--->Simplifies complex functions.
+--->Provides easy syntax to complex codes.
+How they work:
+WEB APIs receive requests from different client devices like mobiles, laptops etc and then send it to the web server to process these requests and produce the required ouput.
+1.CLIENT SIDE WEB API
+2.SERVER SIDE WEB API
+
+CLIENT SIDE JAVA SCRIPT APIS:
+1.Browser APIS  Built in browser
+EXAMPLES:
+	1.DOM APIS-----to change the html and css tags in html webpage
+	2.APIs that fetch data from server
+	3.Audio and Video APIs
+	4.Device APIs
+	5.Client-side storage APIs.
+2.Third party APIS:
+These apis allow to use the respestive applications on the browser.
+EXAMPLES:
+	1.Youtube API
+	2.Google maps api
+	3.Spotify api
+	4.facebook api
+	5.twitter api
+	
+FORM VALIDATION USING JAVA SCRIPT:
+JavaScript provides a way to validate form's data on the client's computer before sending it to the web server.
+
+TESTING WITH MOCHA AND CHAI:
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+       
+7/6/2023
+                                                                          TYPE SCRIPT
+
+TYPE SCRIPT IS A OBJECT ORIENTED PROGRAMMING LANGUAGE WHERE AS JS IS A SCRIPTING LANGUAGE
+INTRODUCTION TO TYPE SCRIPTING PART-1:Features, typeannoatation, conditional statements
+INTRODUCTION TO TYPE SCRIPTING PART-2:Access members:public, private, protecteds, typescript functions:normal and anonymous functions, interfaces.Typescript class and module, typescript decorators, type script ambients.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+7/6/2023
+										ANGULAR
+
+IT IS A POPULAR PLATFORM TO CREATE APPLICATIONS OF ENTERPRISES.and it uses type script where as ANGULARJS uses javascript.
+Angular is popular framework provided by the google to create Single Page Applications(SPAs) using html and typescript.
+Types of web applications:
+1.Single pasge applications.   When we click on anything on the website reloads the entire page EX:Facebook, YouTube, Twitter, GitHub, and numerous Google's services 				are all built using the SPA tech
+2.Multi page applications.     No reload happens when we click something on webpage.  EX: Amazon and eBay are the leading examples of multi-page applications.
+
+--->As per the name suggests single page applications consists just one single page. SPAs present the content in an easy, elegant and effective way as it loads all the content on just one single page rather than navigating the user to different pages. SPAs are faster than traditional web applications because they execute the logic in the web browser itself rather than on the server. And after the initial page load, only data is sent back and forth instead of the entire HTML that reduces the bandwidth.
+
+--->Multi-page applications are the traditional web applications that reload the entire page and displays the new one when a user interacts with the web app. Each time when a data is exchanged back and forth, a new page is requested from the server to display in the web browser. This process takes time to generate the pages on the server, sending it to a client and displaying in the browser which may affect the user experience. 
+
+ANGULAR ARCHITECTURE:
+ANGULAT PROJECT STRUCTURE:
+
+
+
